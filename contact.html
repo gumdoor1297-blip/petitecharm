@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Petite Charm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="central.css">
+</head>
+<body>
+    <!-- Floating Flowers Background -->
+    <div class="flowers-bg" id="flowersBg"></div>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <i class="fas fa-gem"></i>
+                Petite Charm
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">
+                    <i class="fas fa-home"></i> Home
+                </a></li>
+                <li><a href="products.html">
+                    <i class="fas fa-shopping-bag"></i> Products
+                </a></li>
+                <li><a href="testimonials.html">
+                    <i class="fas fa-star"></i> Testimonials
+                </a></li>
+                <li><a href="faqs.html">
+                    <i class="fas fa-question-circle"></i> FAQs
+                </a></li>
+                <li><a href="contact.html" class="active">
+                    <i class="fas fa-envelope"></i> Contact
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope-open-text"></i> Get In Touch</h2>
+                <p>We'd love to hear from you! Questions, custom requests, or just want to say hi?</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <form class="contact-form" onsubmit="handleSubmit(event)">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> Your Name</label>
+                                <input type="text" placeholder="Jane Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope"></i> Email Address</label>
+                                <input type="email" placeholder="jane@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-tag"></i> Subject</label>
+                                <input type="text" placeholder="How can we help you?" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-comment-dots"></i> Message</label>
+                                <textarea placeholder="Tell us what's on your mind..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <h3>Let's Connect!</h3>
+                        <p>Whether you have questions about our products, need sizing advice, or want to discuss a custom piece, we're here to help.</p>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Email Us</h4>
+                                <p>hello@petitecharm.com</p>
+                                <p>support@petitecharm.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                                <p>Mon-Fri: 9am - 6pm EST</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Visit Our Studio</h4>
+                                <p>123 Fashion Avenue</p>
+                                <p>New York, NY 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2><i class="fas fa-clock"></i> Business Hours</h2>
+                    <p>We're here to help during these times</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1); text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--text-dark);">Phone Support</h4>
+                        <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Monday - Friday</p>
+                        <p style="color: var(--primary-pink); font-weight: 600;">9:00 AM - 6:00 PM EST</p>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1); text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--text-dark);">Email Support</h4>
+                        <p style="color: var(--text-gray); margin-bottom: 0.5rem;">7 Days a Week</p>
+                        <p style="color: var(--primary-pink); font-weight: 600;">24-Hour Response Time</p>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1); text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--text-dark);">Studio Visits</h4>
+                        <p style="color: var(--text-gray); margin-bottom: 0.5rem;">By Appointment Only</p>
+                        <p style="color: var(--primary-pink); font-weight: 600;">Book Your Visit</p>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1); text-align: center;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--text-dark);">Live Chat</h4>
+                        <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Monday - Friday</p>
+                        <p style="color: var(--primary-pink); font-weight: 600;">10:00 AM - 5:00 PM EST</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(192, 132, 252, 0.1)); padding: 3rem; border-radius: 20px; margin-top: 4rem; text-align: center;">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem; color: var(--text-dark);">
+                    <i class="fas fa-heart"></i> We Love Hearing From You!
+                </h3>
+                <p style="color: var(--text-gray); max-width: 700px; margin: 0 auto 2rem; line-height: 1.8;">
+                    At Petite Charm, customer satisfaction is our top priority. Whether you have a question about our products, need help with sizing, want to share feedback, or just want to chat about jewelry, we're always here for you. Don't hesitate to reach out - we typically respond within 24 hours!
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="faqs.html" class="cta-btn" style="background: white; color: var(--primary-pink); box-shadow: 0 5px 20px rgba(255, 107, 157, 0.2);">
+                        <i class="fas fa-question-circle"></i> Check FAQs
+                    </a>
+                    <a href="products.html" class="cta-btn">
+                        <i class="fas fa-shopping-bag"></i> Shop Collection
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-gem"></i> Petite Charm</h4>
+                <p>Minimalist jewelry designed with love for petite women. Every piece celebrates your unique beauty.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                <a href="products.html"><i class="fas fa-chevron-right"></i> Shop</a>
+                <a href="testimonials.html"><i class="fas fa-chevron-right"></i> Testimonials</a>
+                <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQs</a>
+                <a href="#"><i class="fas fa-chevron-right"></i> Shipping Info</a>
+                <a href="#"><i class="fas fa-chevron-right"></i> Returns</a>
+                <a href="#"><i class="fas fa-chevron-right"></i> Size Guide</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for exclusive offers and new arrivals!</p>
+                <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                    <input type="email" placeholder="Your email" style="flex: 1; padding: 0.8rem; border: 2px solid var(--light-pink); border-radius: 10px;">
+                    <button style="padding: 0.8rem 1.5rem; background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); color: white; border: none; border-radius: 10px; cursor: pointer;">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Petite Charm. All rights reserved. Made with <i class="fas fa-heart" style="color: var(--primary-pink);"></i> for petite women everywhere.</p>
+        </div>
+    </footer>
+
+    <script src="central.js"></script>
+</body>
+</html>
